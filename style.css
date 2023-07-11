@@ -1,0 +1,75 @@
+.random-post-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.random-post-container {
+  max-width: 720px;
+  margin: 24px auto;
+}
+
+.random-post {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #003049;
+  box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.2);
+}
+
+.random-post .content {
+  padding: 24px;
+}
+
+.random-post .date {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-left: 3px solid #ef233c;
+  padding-left: 8px;
+}
+
+.random-post h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.random-post p {
+  line-height: 1.8;
+}
+
+.random-post .read-more-btn {
+  background: #003049;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 32px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.random-post-container .next-post-btn {
+  padding: 4px 16px;
+  background: #ef233c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 16px 0;
+}
+
+@media (max-width: 700px) {
+  .random-post {
+    flex-direction: column;
+  }
+
+  .random-post-container {
+    max-width: 500px;
+  }
+
+  .random-post-container img {
+    width: 100%;
+    height: 200px;
+  }
+}
